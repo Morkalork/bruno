@@ -1,0 +1,47 @@
+{
+  "name": "magnus",
+  "dependencies": [
+    {
+      "name": "Modelica",
+      "versionSpecifier": "4.0.0"
+    }
+  ],
+  "content": [
+    {
+      "relpath": "Resources/Views",
+      "contentType": "VIEWS",
+      "id": "0deee48367a44c61bf83dce3555325da"
+    },
+    {
+      "relpath": "Resources/Favorites",
+      "contentType": "FAVORITES",
+      "id": "c58ecabfaa6e4421ad2dda75b3efc79e"
+    },
+    {
+      "relpath": "Resources/CustomFunctions",
+      "contentType": "CUSTOM_FUNCTIONS",
+      "id": "302a66adcdb6477ebae4146f4ceba801"
+    },
+    {
+      "relpath": "Resources/Custom",
+      "contentType": "GENERIC",
+      "id": "2db90d7bea25403baa8643e65e16eb44"
+    },
+    {
+      "relpath": "ReferenceResults",
+      "contentType": "REFERENCE_RESULTS",
+      "id": "9f794189f3ec479dbb8c3697c060aea5"
+    },
+    {
+      "relpath": "Resources/ExperimentDefinitions",
+      "contentType": "EXPERIMENT_DEFINITIONS",
+      "id": "55e4a135fbb943d290654320bd515f33"
+    },
+    {
+      "relpath": "MyPackage",
+      "contentType": "MODELICA",
+      "name": "MyPackage",
+      "id": "a31d36171c8044528fde9df6c7e97ffe"
+    }
+  ]
+}
