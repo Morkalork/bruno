@@ -37,7 +37,7 @@ within MyPackage;
       qdd_max={1}) annotation (Placement(transformation(extent={{-92,20},{-72,
               40}})));
     .Modelica.Blocks.Continuous.Integrator integrator(initType=.Modelica.Blocks.Types.Init.InitialState)
-      annotation (Placement(transformation(extent={{-63,20},{-43,40}})));
+      annotation (Placement(transformation(extent={{-42.0,20.0},{-22.0,40.0}},rotation = 0.0,origin = {0.0,0.0})));
     .Modelica.Mechanics.Rotational.Sensors.SpeedSensor speedSensor annotation (
         Placement(transformation(extent={{22,-50},{2,-30}})));
     .Modelica.Mechanics.Rotational.Sources.ConstantTorque loadTorque(
@@ -54,7 +54,7 @@ within MyPackage;
     connect(torque.flange, inertia1.flange_a)
       annotation (Line(points={{-5,-10},{2,-10}}));
     connect(kinematicPTP.y[1], integrator.u)
-      annotation (Line(points={{-71,30},{-65,30}}, color={0,0,127}));
+      annotation (Line(points={{-71,30},{-44,30}}, color={0,0,127}));
     connect(speedSensor.flange, inertia1.flange_b)
       annotation (Line(points={{22,-40},{22,-10}}));
     connect(loadTorque.flange, inertia2.flange_b)
@@ -63,8 +63,7 @@ within MyPackage;
       annotation (Line(points={{-35,-10},{-27,-10}}, color={0,0,127}));
     connect(speedSensor.w, PI.u_m)
       annotation (Line(points={{1,-40},{-46,-40},{-46,-22}}, color={0,0,127}));
-    connect(integrator.y, PI.u_s) annotation (Line(points={{-42,30},{-37,30},{-37,
-            11},{-67,11},{-67,-10},{-58,-10}}, color={0,0,127}));
+    connect(integrator.y, PI.u_s) annotation (Line(points={{-21,30},{-37,30},{-37,11},{-67,11},{-67,-10},{-58,-10}}, color={0,0,127}));
     annotation (
       Diagram(coordinateSystem(
           preserveAspectRatio=true,
